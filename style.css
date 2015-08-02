@@ -1,0 +1,348 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700|Open+Sans:400,700);
+
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	margin: 0;	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block;}body {	line-height: 1;}ol, ul {	list-style: none;}blockquote, q {	quotes: none;}blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}table {	border-collapse: collapse;	border-spacing: 0;}
+
+/*-----GENERAL STYLING-----*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    padding: 1.5em;
+    color: #333;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.news-header {
+    font-family: 'Droid Serif', serif;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+h1 {
+    font-size: 1.8em;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+input[type=button] {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1em;
+    background-color: #999;
+    border: 0;
+    padding: 0.5em;
+}
+
+.news-author {
+    color: #bbb;
+    padding: 0.5em 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.author-name {
+    color: #999;
+}
+
+.news-metadata {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.85em;
+    color: #999;
+    padding: 0.5em 0;
+}
+
+.news-metadata li {
+    padding: 0.5em 0;
+}
+
+.news-metadata-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #999;
+    border-radius: 8px;
+    position: relative;
+    top: 2px;
+    margin-right: 6px;
+}
+
+.logo {
+    height: 40px;
+    width: 40%;
+    background-color: #ccc;
+    float: left;
+}
+
+.news {
+    padding: 1.5em 0 3.5em 0;
+    border-bottom: 5px solid #ccc;
+    float: left;
+}
+
+time {
+    color: #ccc;
+}
+
+.news-desc {
+    padding: 1em 0;
+}
+
+.news-p {
+    padding: 1em 0;
+    float: left;
+}
+
+.news-image {
+    width: 100%;
+    max-width: 499px;
+    height: auto;
+    padding: 1em 0;
+}
+
+.readmore {
+    background: #ccc;
+    padding: 0.8em;
+    margin: 0.5em 0;
+    float: left;
+}
+
+.advert {
+    width: 100%;
+    float: left;
+    padding: 3em 0;
+}
+
+.advert-img {
+    width: 80px;
+    height: 100px;
+    background: #ccc;
+    float: left;
+    margin-right: 1em;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+.advert-text h2 {
+    float: left;
+    margin-right: 0.5em;
+    color: #999;
+}
+
+small {
+    font-size: 0.8em;
+    line-height: 1.5em;
+    color: #999;
+}
+
+/*-----POSITIONING AND HIDING-----*/
+
+.mobile-hide, .tablet-hide {
+    display: none;
+}
+
+.top-nav {
+    width: 100%;
+    overflow: hidden;
+    padding: 1em 0.5em 1.2em 0.5em;
+}
+
+.mobile-buttons {
+    float: right;
+}
+
+.mobile-buttons li {
+    float: left;
+    margin: 0 0.5em;
+}
+
+.main-footer {
+    clear: both;
+    padding: 2em 0 0.5em 0;
+    height: 200px;
+    position: relative;
+}
+
+.page-nav {
+    width: 100%;
+    text-align: center;
+}
+
+.page-nav ul {
+    overflow: hidden;
+    width: 100%;
+}
+
+.page-nav li {
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 0.5em 0;
+    color: #999;
+    width: 15.666666666666666%;
+}
+
+.page-nav .current {
+    background: #999;
+    color: #fff;
+}
+
+.next {
+    position: absolute;
+    right: 0;
+    margin: 1.5em 0em;
+}
+
+.back-to-top {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #999;
+}
+
+.footer-adverts {
+    overflow: hidden;
+    padding: 2em 0;
+}
+
+.credits {
+    padding: 3em 0;
+}
+
+@media only screen and (min-width:480px) {
+    
+    .logo {
+        height: 80px;
+    }
+    
+    .news-metadata li {
+        float: left;
+        margin-right: 1em;
+    }
+    
+    .news-desc {
+        clear: both;
+    }
+    
+    footer {
+        padding: 0 1em;
+    }
+    
+    .page-nav ul {
+        width: 75%;
+        margin: 0 auto;
+    }
+    
+    .next {
+        top: 12px;
+    }
+    
+    .footer-adverts .advert {
+        width: 33.333333%;
+        padding: 3em 0.5em;
+    }
+    
+    .footer-adverts .advert-img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .footer-adverts .advert-text {
+        clear: both;
+        padding-top: 1em;
+    }
+    
+}
+
+@media only screen and (min-width:512px) {
+    
+    body {
+        font-size: 16px;
+    }
+    
+}
+
+@media only screen and (min-width:768px) {
+    
+/*-----GENERAL STYLING-----*/
+    
+    body {
+        font-size: 14px;
+    }
+    
+    .category {
+        padding: 0 0 2em 1.5em;
+        border-left: 8px solid #ddd;
+    }
+    
+    .cat-name {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    
+    .category li {
+        line-height: 2.5em;
+    }
+    
+    .cat-item {
+        color: #999;
+    }
+    
+    .logo {
+        width: 150px;
+        height: 60px;
+    }
+    
+/*-----POSITION AND DISPLAYS-----*/
+    
+    .mobile-hide {
+        display: block;
+    }
+    
+    .mobile-buttons {
+        display: none;
+    }
+    
+    .top-nav {
+        position: relative;
+    }
+    
+    .store {
+        position: absolute;
+        bottom: 1em;
+        left: 166px;
+    }
+    
+    .store li {
+        display: inline-block;
+        padding: 0 1em;
+        color: #bbb;
+    }
+    
+    .categories {
+        float: left;
+        width: 25%;
+    }
+    
+    .main-content {
+        float: left;
+        width: 75%;
+    }
+    
+    .page-nav ul {
+        width: 450px;
+    }
+    
+    .next {
+        position: static;
+    }
+    
+}
